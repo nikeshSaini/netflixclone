@@ -1,2 +1,2 @@
-# netflixclone
+# Netflixclone
  
