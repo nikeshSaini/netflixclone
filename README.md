@@ -19,17 +19,6 @@ This project is a frontend clone of the Netflix streaming platform, designed to 
 - **React Router:** Navigation for a single-page application feel.
 - **API Integration:** Fetching movie and TV show data from a public API (e.g., The Movie Database API).
 
-## How to Run
-
-1. Clone the repository: `git clone https://github.com/your-username/netflix-frontend-clone.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
-4. Open your browser and visit `http://localhost:3000`
-
-## Screenshots
-
-![Homepage](/screenshots/homepage.png)
-*Add more screenshots showcasing different sections of the application.*
 
 ## Contribution
 
