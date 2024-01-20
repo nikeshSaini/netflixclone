@@ -36,7 +36,8 @@ nav{
 }
 #logo{
     color: red;
-    size: 112px;
+    margin-top: 5px;
+    width: 8rem;
     position: relative;
     z-index: 10;
 }
@@ -90,24 +91,24 @@ nav button{
     justify-content: center;
     position: relative;
     text-align: center;
-    gap: 20px;
+    gap: 25px;
     text-align: center;
     
 }
 
 .hero :first-child{
     margin: 0;
-   font-size: 2rem;
+   font-size: 3rem;
    font-weight: 700;
 }
 .hero :nth-child(2){
     margin: 1rem 0 0;
-  font-size: 1.125rem;
-  font-weight: 400;
+  font-size: 1.75rem;
+  font-weight: 450;
 }
 .hero :nth-child(3){
     margin: 0;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -127,6 +128,7 @@ nav button{
     padding-left: 1rem;
     letter-spacing: inherit;
 }
+
 #startingSignIn{
     background: rgb(229,9,20);
     margin-top: 0;
@@ -142,5 +144,95 @@ nav button{
 
 .seperation{
     height: 8px;
-    background-color: grey;
+    background-color: rgb(64, 63, 63);
+}
+.first {
+    display: flex;
+    flex-direction: row;
+    max-width: calc( 100% - 4rem );
+    align-items: center;
+    text-align: center;
+    padding: 4.5rem 0;
+    margin-left: 192px;
+    margin-right: 192px;
+   
+}
+.first div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 6px;
+    padding-top: 0px;
+    text-align: left;
+    -moz-box-align: center;
+    z-index: 1
+    
+}
+.first >div :first-child{
+    font-size: 3rem;
+}
+.first>div :nth-child(2){
+    font-size: 1.4rem;
+}
+
+
+
+.secImg img{
+    margin-top:10px ;
+    margin-right: 130px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    border-image-repeat: stretch;
+    z-index: 10;
+}
+
+.secImg video{
+    position: absolute;
+}
+
+
+
+
+.second {
+    display: flex;
+    flex-direction: row;
+    max-width: calc( 100% - 4rem );
+    align-items: center;
+    text-align: center;
+    padding: 4.5rem 0;
+    margin-left: 192px;
+    margin-right: 192px;
+   
+}
+.second div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 6px;
+    padding-top: 0px;
+    text-align: left;
+    -moz-box-align: center;
+    z-index: 1
+    
+}
+.second >div :first-child{
+    font-size: 3rem;
+}
+.second>div :nth-child(2){
+    font-size: 1.4rem;
+}
+
+
+
+.fimg img{
+    margin-top:10px ;
+    margin-right: 130px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    border-image-repeat: stretch;
+    z-index: 10;
 }
