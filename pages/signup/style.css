@@ -84,7 +84,7 @@ body{
 
 
 #logo{
-   
+    cursor: pointer;
     color: red;
     margin-left: 9rem;
     margin-top: 15px;
