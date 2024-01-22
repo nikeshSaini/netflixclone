@@ -17,30 +17,32 @@
         </nav>
 
         <div class="box"></div>
-        <div class="signbox">
-            <h1>Sign In</h1>
-            <input type="email" name="email" id="signboxEmail" placeholder="Email or Phone Number">
-            <div class="space"></div>
-            <input type="password" name="password" id="signboxPass" placeholder="Password">
-            <div class="space"></div>
-            <input type="button" value="Sign In" id="signinBtn">
-            <div class="help">
-                <label>
-                    <input type="checkbox" name="ticketCheckbox"> Remember Me
-                  </label>
-                <a href="#"><p>Need Help?</p></a>
- 
-            </div>
-            <div class="space"></div><div class="space"></div>
-            <div class="newUser">
-                <span>New to Netflix? <a href="/netflixclone_own/index.html">Sign up now.</a></span>
+        <form action="connect.php" method="post">
+            <div class="signbox">
+                <h1>Sign In</h1>
+                <input type="email" name="email" id="signboxEmail" placeholder="Email or Phone Number">
                 <div class="space"></div>
-                <div>
-                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
-                     <a href="#" style="text-decoration: none;color:#0071eb;">Learn more.</p></a>
+                <input type="password" name="password" id="signboxPass" placeholder="Password">
+                <div class="space"></div>
+                <input type="submit" value="Sign In"  name="signinBtn" id="signinBtn">
+                <div class="help">
+                    <label>
+                        <input type="checkbox" name="ticketCheckbox"> Remember Me
+                      </label>
+                    <a href="#"><p>Need Help?</p></a>
+     
+                </div>
+                <div class="space"></div><div class="space"></div>
+                <div class="newUser">
+                    <span>New to Netflix? <a href="/netflixclone_own/index.html">Sign up now.</a></span>
+                    <div class="space"></div>
+                    <div>
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                         <a href="#" style="text-decoration: none;color:#0071eb;">Learn more.</p></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
         
 
        
