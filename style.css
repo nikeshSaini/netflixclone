@@ -194,10 +194,10 @@ nav button{
 
 .secImg video {
     position: absolute;
-    top: 51px;
-    right: 0;
-    width: 515px;
-    overflow: hidden;
+  top: 46px;
+  left: 96px;
+  width: 364px;
+  overflow: hidden;
 }
 
 
