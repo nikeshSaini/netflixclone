@@ -5,3 +5,7 @@ document.getElementById('signinbtn').addEventListener('click', function(){
 document.getElementById('logo').addEventListener('click', function(){
     window.location.href = '/netflixclone_own/index.html';
 });
+
+document.getElementById('startingSignIn').addEventListener('click', function(){
+    window.location.href = '/netflixclone_own/pages/singin/singin.html';
+});

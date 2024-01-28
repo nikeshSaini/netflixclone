@@ -1,0 +1,92 @@
+
+body {
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #fff;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #111;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s; /* Add smooth background color transition */
+    z-index: 1000;
+  }
+
+header {
+  background-color: #111;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* z-index: 1000; */
+}
+
+header img {
+  height: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b3b3b3;
+  height: 100%;
+  position: relative;
+  transition: color .4s;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+
+#banner{
+  color: white;
+  object-fit: contain;
+  height: 644px;
+  background-position: center center;
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.movie {
+  margin-right: 20px;
+}
+
+.movie img {
+  width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+}
