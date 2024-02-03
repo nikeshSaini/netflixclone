@@ -10,7 +10,7 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 .main{
-    background-image:url(/netflixclone_own/assets/images/bg.jpg);
+    background-image:url(/assets/images/bg.jpg);
     background-position: center center;
     background-repeat: repeat;
     background-size: max(1000px,100vw);
