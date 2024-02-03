@@ -1,5 +1,5 @@
  
-# Netflix Frontend Clone(https://electrowheelshub.000webhostapp.com/)
+# Netflix Frontend Clone(https://nikeshsaini.github.io/netflixclone/)
 
 ## Overview
 

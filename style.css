@@ -270,6 +270,9 @@ nav button{
     background-color: rgb(64, 63, 63);
     justify-content: space-between;
 }
+.faqbox:hover{
+    cursor: pointer;
+}
 
 .btn{
     width: 100%;
