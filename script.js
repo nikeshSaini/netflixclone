@@ -8,7 +8,6 @@ document.getElementById('logo').addEventListener('click', function(){
 
 document.getElementById('startingSignIn').addEventListener('click', function(){
     window.location.href = '/netflixclone_own/pages/singin/singin.html';
-<<<<<<< HEAD
 });
 
 //important
@@ -28,6 +27,4 @@ document.getElementById('startingSignIn').addEventListener('click', function(){
     });
   });
   
-=======
-});
->>>>>>> f45454b041be6321917d92166d4917ae9dadc542
+
