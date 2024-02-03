@@ -260,15 +260,45 @@ nav button{
 }
 .faqbox{
     display: flex;
-    margin-top: 1rem;
+    flex-direction: column;
     background-color: gray;
     align-items: center;
-    padding: 1.5rem;
+    margin-top: 1rem;
     font-size: 18px;
     font-stretch: 100%;
+    box-sizing: border-box;
     background-color: rgb(64, 63, 63);
     justify-content: space-between;
 }
+
+.btn{
+    width: 100%;
+    margin: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.btn span{
+    padding: 0px 10px;
+}
+.btn svg{
+    padding-right: 10px;
+}
+.info{
+    padding: 1rem 0.5rem;
+    content:auto;
+    overflow: auto;
+}
+.info p{
+    text-align: left;
+}
+.faqbox svg:hover{
+    transition: all 1s linear;
+}
+
+
+/* footer  */
 
 .starting{
     margin-top: 1rem;

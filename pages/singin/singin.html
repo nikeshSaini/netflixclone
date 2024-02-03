@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-SignIn</title>
+    <title>Netflix-SignUp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/netflixclone_own/favicon.ico" type="image/x-icon">
 </head>
@@ -17,14 +17,26 @@
         </nav>
 
         <div class="box"></div>
-        <form action="login.php" method="post">
-            <div class="signbox">
-                <h1>Sign In</h1>
-                <input type="email" name="email" id="signboxEmail" placeholder="Email or Phone Number">
+        <form action="connect1.php" method="post">
+            <div class="signupbox">
+                <h1>Sign Up</h1>
+                <input type="text" class="formm" name="firstName" id="signboxFname" placeholder="Enter First Name">
                 <div class="space"></div>
-                <input type="password" name="password" id="signboxPass" placeholder="Password">
+                
+
+                <input type="Text" class="formm" name="lastName" id="signboxLname" placeholder="Enter Last Name">
                 <div class="space"></div>
-                <input type="submit" value="Sign In"  name="signinBtn" id="signinBtn">
+                
+
+
+                <input type="email" class="formm" name="email" id="signupboxEmail" placeholder="Email or Phone Number">
+                <div class="space"></div>
+
+
+
+                <input type="password"  class="formm" name="password" id="signupboxPass" placeholder="Password">
+                <div class="space"></div>
+                <input type="submit" value="Sign Up"  name="signinBtn" id="signinBtn">
                 <div class="help">
                     <label>
                         <input type="checkbox" name="ticketCheckbox"> Remember Me
@@ -34,7 +46,8 @@
                 </div>
                 <div class="space"></div><div class="space"></div>
                 <div class="newUser">
-                    <span>New to Netflix? <a href="/netflixclone_own/pages/singin/singin.html">Sign up now.</a></span>
+                    <span>Already a member? <p id="getstarted"> Log-in now. </p>
+                    </span>
                     <div class="space"></div>
                     <div>
                         This page is protected by Google reCAPTCHA to ensure you're not a bot.
