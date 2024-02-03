@@ -1,24 +1,44 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  font-family:' Netflix Sans',Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
   margin: 0;
   padding: 0;
   background-color: #141414;
   color: #fff;
 }
+::-webkit-scrollbar{
+  width: 7px;
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  border-radius: 10px;
+}
 #navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: #111;
-    padding: 10px 20px;
+    padding: 10px 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s; /* Add smooth background color transition */
-    z-index: 1000;
-  }
+    transition: all 0.3s ease; /* Add smooth background color transition */
+    z-index: 1;
+    opacity: .8;
+}
+
+.hrl{
+  background-color: #232323;
+  height: 8px;
+}
 
 header {
+  position: relative;
   background-color: #111;
   padding: 10px 20px;
   display: flex;
@@ -28,14 +48,15 @@ header {
 }
 
 header img {
-  height: 30px;
+  height: 50px;
+  padding: 0 4rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 3rem;
 }
 
 nav li {
@@ -52,10 +73,14 @@ nav a {
   transition: color .4s;
   font-weight: bold;
   font-size: 16px;
+  opacity: 0.7;
 }
 
 nav a:hover {
   color: #fff;
+  opacity: 1;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
 }
 
 
@@ -71,22 +96,35 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.movie-list {
+.row_title{
+  padding: 10px;
+}
+.row_posters{
   display: flex;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 10px;
+  justify-content: baseline;
+  gap: 0.6rem;
 }
 
-.movie {
-  margin-right: 20px;
+.row_posters img {
+  width: 300px;
+  height: auto;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
 }
 
-.movie img {
-  width: 150px;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.movie img:hover {
+.row_posters img:hover {
+  padding-right:0 1vw 0 1rem;
   transform: scale(1.1);
 }
+
+
+
+
+/* ssvsvsvs */
+
+
+
+
+
