@@ -26,6 +26,7 @@ const requests = {
 function truncate(str, n) {
   return str?.length > n ? str.substr(0, n - 1) + "....." : str;
 }
+let horizontalbar = document.querySelector('.hrl');
 
 // fetching the data from the api
 
@@ -45,7 +46,7 @@ fetch(requests.fetchNetflixOrignals)
     banner_desc.innerHTML = truncate(setMovie.overview, 150);
     banner_title.innerHTML = setMovie.name;
   });
-
+horizontalbar;
 //   MOVIE ROW
 
 fetch(requests.fetchNetflixOrignals)
@@ -63,6 +64,7 @@ fetch(requests.fetchNetflixOrignals)
       throw new Error("Invalid API response: 'results' property not found");
     }
 
+
     const row = document.createElement("div");
     row.className = "row";
     row.classList.add("netflixrow");
@@ -70,7 +72,7 @@ fetch(requests.fetchNetflixOrignals)
 
     const title = document.createElement("h2");
     title.className = "row_title";
-    title.innerHTML = "Netflix Originals";
+    title.innerText = "Netflix Originals";
     row.appendChild(title);
 
     const row_poster = document.createElement("div");
@@ -82,13 +84,14 @@ fetch(requests.fetchNetflixOrignals)
       poster.className = "row_posterLarge";
       let s = movie.name.replace(/\s+/g, "");
       poster.id = s;
-      poster.src = img_url + movie.poster_path;
+      poster.src = img_url + movie.backdrop_path;
       row_poster.appendChild(poster);
     });
   })
   .catch((error) => {
     console.error("Error fetching Netflix Originals:", error);
   });
+
 
 
 //   top rated 
@@ -120,7 +123,7 @@ fetch(requests.fetchTrending)
 
       let s2 = movie.id;
       poster.id = s2;
-      poster.src = img_url + movie.poster_path;
+      poster.src = img_url + movie.backdrop_path;
       row_poster.appendChild(poster);
     });
   });
@@ -157,9 +160,147 @@ fetch(requests.fetchTrending)
 
       let s3 = movie.id;
       poster.id = s3;
-      poster.src = img_url + movie.poster_path;
+      poster.src = img_url + movie.backdrop_path;
+      row_poster.appendChild(poster);
+    });
+  });
+
+// documentrie 
+
+  fetch(requests.fetchDocumentaries)
+  .then((res) => res.json())
+
+  .then((data) => {
+    const headr = document.getElementById("headrow");
+    const row = document.createElement("div");
+    row.className = "row";
+    row.classList.add("netflixrow");
+    headr.appendChild(row);
+
+    const title = document.createElement("h2");
+    title.className = "row_title";
+    title.innerHTML = "Documentaries Movies";
+    row.appendChild(title);
+
+    const row_poster = document.createElement("div");
+    row_poster.className = "row_posters";
+    row.appendChild(row_poster);
+
+    data.results.forEach((movie) => {
+
+        // console.log(movie);
+      const poster = document.createElement("img");
+      poster.className = "row_posterLarge";
+
+      let s3 = movie.id;
+      poster.id = s3;
+      poster.src = img_url + movie.backdrop_path;
+      row_poster.appendChild(poster);
+    });
+  });
+
+
+
+  // comedy movie 
+
+  fetch(requests.fetchComedyMovies)
+  .then((res) => res.json())
+
+  .then((data) => {
+    const headr = document.getElementById("headrow");
+    const row = document.createElement("div");
+    row.className = "row";
+    row.classList.add("netflixrow");
+    headr.appendChild(row);
+
+    const title = document.createElement("h2");
+    title.className = "row_title";
+    title.innerHTML = "Comedy Movies";
+    row.appendChild(title);
+
+    const row_poster = document.createElement("div");
+    row_poster.className = "row_posters";
+    row.appendChild(row_poster);
+
+    data.results.forEach((movie) => {
+
+        // console.log(movie);
+      const poster = document.createElement("img");
+      poster.className = "row_posterLarge";
+
+      let s3 = movie.id;
+      poster.id = s3;
+      poster.src = img_url + movie.backdrop_path;
       row_poster.appendChild(poster);
     });
   });
 
   
+  fetch(requests. fetchHorrorMovies)
+  .then((res) => res.json())
+
+  .then((data) => {
+    const headr = document.getElementById("headrow");
+    const row = document.createElement("div");
+    row.className = "row";
+    row.classList.add("netflixrow");
+    headr.appendChild(row);
+
+    const title = document.createElement("h2");
+    title.className = "row_title";
+    title.innerHTML = "Horror Movies";
+    row.appendChild(title);
+
+    const row_poster = document.createElement("div");
+    row_poster.className = "row_posters";
+    row.appendChild(row_poster);
+
+    data.results.forEach((movie) => {
+
+        // console.log(movie);
+      const poster = document.createElement("img");
+      poster.className = "row_posterLarge";
+
+      let s3 = movie.id;
+      poster.id = s3;
+      poster.src = img_url + movie.backdrop_path;
+      row_poster.appendChild(poster);
+    });
+  });
+  
+  fetch(requests. fetchRomanceMovies)
+  .then((res) => res.json())
+
+  .then((data) => {
+    const headr = document.getElementById("headrow");
+    const row = document.createElement("div");
+    row.className = "row";
+    row.classList.add("netflixrow");
+    headr.appendChild(row);
+
+    const title = document.createElement("h2");
+    title.className = "row_title";
+    title.innerHTML = "Romance Movies";
+    row.appendChild(title);
+
+    const row_poster = document.createElement("div");
+    row_poster.className = "row_posters";
+    row.appendChild(row_poster);
+
+    data.results.forEach((movie) => {
+
+        // console.log(movie);
+      const poster = document.createElement("img");
+      poster.className = "row_posterLarge";
+
+      let s3 = movie.id;
+      poster.id = s3;
+      poster.src = img_url + movie.backdrop_path;
+      row_poster.appendChild(poster);
+    });
+  });
+
+  
+
+
+
