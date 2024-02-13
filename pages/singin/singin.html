@@ -17,7 +17,7 @@
         </nav>
 
         <div class="box"></div>
-        <form action="connect1.php" method="post">
+        <form id="signupForm" action="" method="">
             <div class="signupbox">
                 <h1>Sign Up</h1>
                 <input type="text" class="formm" name="firstName" id="signboxFname" placeholder="Enter First Name">
@@ -46,7 +46,8 @@
                 </div>
                 <div class="space"></div><div class="space"></div>
                 <div class="newUser">
-                    <span>Already a member? <p id="getstarted"> Log-in now. </p>
+                    <span id="getstarted">Already a member? <a href="#" id="loginLink"> Log-in now. </a></span>
+
                     </span>
                     <div class="space"></div>
                     <div>
@@ -63,6 +64,6 @@
         <div class="seperation"></div>
         
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
