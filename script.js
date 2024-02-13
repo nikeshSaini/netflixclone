@@ -1,13 +1,16 @@
 document.getElementById('signinbtn').addEventListener('click', function(){
-    window.location.href = '/pages/signup/singup.html';
+    window.location.href = './pages/signup/singup.html';
 });
 
 document.getElementById('logo').addEventListener('click', function(){
-    window.location.href = '/index.html';
+    window.location.href = './index.html';
 });
 
 document.getElementById('startingSignIn').addEventListener('click', function(){
-    window.location.href = '/pages/singin/singin.html';
+    window.location.href = './pages/singin/singin.html';
+});
+document.getElementsByClassName('class="signinfirst"').addEventListener('click', function(){
+    window.location.href = './pages/singin/singin.html';
 });
 
 //important
