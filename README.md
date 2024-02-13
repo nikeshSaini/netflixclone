@@ -1,7 +1,11 @@
- 
-# Netflix Frontend Clone(https://nikeshsaini.github.io/netflixclone/)
+# 
+# Netflix Frontend Clone(chit-chatflix.netlify.app/)
 
 ## Overview
+
+#create your id first to login
+#or use id: abc@gmail.com
+@ use pass: 12345678
 
 This project is a frontend clone of the Netflix streaming platform, designed to replicate its user interface and experience. It provides a responsive and interactive user interface similar to Netflix, showcasing modern web development techniques.
 
