@@ -1,5 +1,5 @@
 # 
-# Netflix Frontend Clone(chit-chatflix.netlify.app/)
+# Netflix Frontend Clone(https://chit-chatflix.netlify.app/)
 
 ## Overview
 
