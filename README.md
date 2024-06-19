@@ -19,7 +19,7 @@ This project is a frontend clone of the Netflix streaming platform, designed to 
 ## Technologies Used
 
 - **HTML, CSS, JavaScript:** Core web development technologies for building the frontend.
-- **Php**  for connecting the user email id password
+- **MongoDb**  for connecting the user email id password
 - **API Integration:** Fetching movie and TV show data from a public API (e.g., The Movie Database API).
 
 
